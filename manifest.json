@@ -5,11 +5,13 @@
 	"options": [
 		{
 			"name": "ws",
-			"default": false
+			"default": false,
+			"type": "boolean"
 		},
 		{
 			"name": "static",
-			"default": false
+			"default": false,
+			"type": "boolean"
 		}
 	],
 	"files": {
@@ -19,9 +21,7 @@
 			"mix.exs",
 			"README.md",
 			"lib/<%= @project_name %>/application.ex",
-			"lib/<%= @project_name %>/endpoint.ex",
-			"priv/repo/migrations/.formatter.exs",
-			"priv/repo/seeds.exs"
+			"lib/<%= @project_name %>/endpoint.ex"
 		],
 		"test": [
 			"config/test.exs",

@@ -28,9 +28,9 @@ defmodule <%= @project_name_camel_case %>.Application do
     [
       {:_,
        [
-         <%= if @ws %>{"/ws", <%= @project_name_camel_case %>.Ws, %{}},<% end %><%= if @ws and @static %>
-         <% end %><%= if @static %>{"/static/[...]", :cowboy_static, {:priv_dir, :<%= @project_name %>, "static"}},<% end %>
-         {:_, Plug.Cowboy.Handler, {<%= @project_name_camel_case %>.Endpoint, []}}
+         <%= if @ws do %>{"/ws", <%= @project_name_camel_case %>.Ws, %{}},
+         <% end %><%= if @static do %>{"/static/[...]", :cowboy_static, {:priv_dir, :<%= @project_name %>, "static"}},
+         <% end %>{:_, Plug.Cowboy.Handler, {<%= @project_name_camel_case %>.Endpoint, []}}
        ]}
     ]
   end
