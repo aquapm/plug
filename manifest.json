@@ -1,0 +1,43 @@
+{
+	"name": "plug",
+	"short_desc": "Template for Cowboy web application with Plug HTTP Endpoint",
+	"version": 1,
+	"options": [
+		{
+			"name": "ws",
+			"default": false
+		},
+		{
+			"name": "static",
+			"default": false
+		}
+	],
+	"files": {
+		"base": [
+			"config/config.exs",
+			".formatter.exs",
+			"mix.exs",
+			"README.md",
+			"lib/<%= @project_name %>/application.ex",
+			"lib/<%= @project_name %>/endpoint.ex",
+			"priv/repo/migrations/.formatter.exs",
+			"priv/repo/seeds.exs"
+		],
+		"test": [
+			"config/test.exs",
+			"config/dev.exs",
+			"config/prod.exs",
+			"test/test_helper.exs",
+			"test/endpoint_test.exs"
+		],
+		"ws": [
+			"lib/<%= @project_name %>/ws.ex"
+		],
+		"static": [
+			"priv/static/index.html"
+		],
+		"in_standalone?": [
+			".gitignore<% :evaluate_gitignore %>"
+		]
+	}
+}
