@@ -39,5 +39,14 @@
 		"in_standalone?": [
 			".gitignore<% :evaluate_gitignore %>"
 		]
-	}
+	},
+	"injects": [
+		{
+			"name": "router",
+			"description": "Generic Plug controller",
+			"aliases": [],
+			"template": "injects/router.eex",
+			"options": []
+		}
+	]
 }
