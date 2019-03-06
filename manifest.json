@@ -47,6 +47,13 @@
 			"aliases": [],
 			"template": "injects/router.eex",
 			"options": []
+		},
+		{
+			"name": "socket",
+			"description": "Generic Cowboy socket",
+			"aliases": [],
+			"template": "injects/socket.eex",
+			"options": []
 		}
 	]
 }
