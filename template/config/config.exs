@@ -1,4 +1,4 @@
-use Mix.Config
+import Config
 
 config :<%= @project_name %>,
   port: 4001
