@@ -1,6 +1,6 @@
 {
 	"name": "plug",
-	"short_desc": "Template for Cowboy web application with Plug HTTP Endpoint",
+	"short_desc": "Cowboy webapp with Plug HTTP Endpoint",
 	"version": 1,
 	"options": [
 		{
