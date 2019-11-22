@@ -1,6 +1,6 @@
 import Config
 
 config :<%= @project_name %>,
-  port: 4001
+  port: 4001<%= if @test do %>
 
-<%= if @test do %>import_config "#{Mix.env()}.exs"<% end %>
+import_config "#{Mix.env()}.exs"<% end %>
